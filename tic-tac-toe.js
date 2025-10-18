@@ -6,6 +6,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   squares.forEach((square) => {
     square.classList.add("square");
+    square.addEventListener("mouseenter", () => square.classList.add("hover"));
+    square.addEventListener("mouseleave", () =>
+      square.classList.remove("hover")
+    );
     square.addEventListener("click", () => {
       if (square.textContent !== "") return;
 
