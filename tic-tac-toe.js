@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     currentplayer = players[0];
     getStatus.textContent =
       "Move your mouse over a square and click to play an X or an O.";
-    if (End) return;
+    End = false;
   });
   // Turns divs into squares and adds mouse hover and click functionality
   squares.forEach((square) => {
